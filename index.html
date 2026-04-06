@@ -101,6 +101,27 @@
       background: rgba(56, 189, 248, 0.2);
       color: #38bdf8;
     }
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(34, 197, 94, 0.9);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    .toast.show {
+      opacity: 1;
+      visibility: visible;
+    }
   </style>
 </head>
 <body class="bg-[#0d1117]">
@@ -111,6 +132,7 @@
         <a href="#home" class="text-2xl font-bold text-white">百晓生</a>
         <div class="flex items-center space-x-8">
           <a href="#about" class="nav-link text-gray-400 hover:text-white transition" data-i18n="nav.about">关于</a>
+          <a href="#experience" class="nav-link text-gray-400 hover:text-white transition" data-i18n="nav.experience">经历</a>
           <a href="#projects" class="nav-link text-gray-400 hover:text-white transition" data-i18n="nav.projects">项目</a>
           <a href="#skills" class="nav-link text-gray-400 hover:text-white transition" data-i18n="nav.skills">技术栈</a>
           <a href="#contact" class="nav-link text-gray-400 hover:text-white transition" data-i18n="nav.contact">联系</a>
@@ -219,6 +241,48 @@
     </div>
   </section>
 
+  <!-- 工作经历 -->
+  <section id="experience" class="py-24 bg-[#0d1117]">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-4 text-white" data-i18n="experience.title">工作经历</h2>
+      <p class="text-gray-500 text-center mb-16 text-lg">Work Experience</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Company 1 -->
+        <div class="glass-card rounded-2xl p-8 card-hover">
+          <div class="w-16 h-16 mx-auto mb-6 bg-[#38bdf8]/10 rounded-xl flex items-center justify-center">
+            <i class="fas fa-building text-[#38bdf8] text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-white mb-3 text-xl" data-i18n="experience.chinatelecom">中国电信</h3>
+          <a href="https://www.chinatelecom.com.cn/" target="_blank" class="text-[#38bdf8] hover:text-white font-semibold transition block">
+            <span data-i18n="experience.visit">访问官网</span> <span class="ml-2">→</span>
+          </a>
+        </div>
+
+        <!-- Company 2 -->
+        <div class="glass-card rounded-2xl p-8 card-hover">
+          <div class="w-16 h-16 mx-auto mb-6 bg-[#22c55e]/10 rounded-xl flex items-center justify-center">
+            <i class="fas fa-rocket text-[#22c55e] text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-white mb-3 text-xl" data-i18n="experience.sim">System In Motion</h3>
+          <a href="https://system-in-motion.com/" target="_blank" class="text-[#38bdf8] hover:text-white font-semibold transition block">
+            <span data-i18n="experience.visit">访问官网</span> <span class="ml-2">→</span>
+          </a>
+        </div>
+
+        <!-- Company 3 -->
+        <div class="glass-card rounded-2xl p-8 card-hover">
+          <div class="w-16 h-16 mx-auto mb-6 bg-[#f59e0b]/10 rounded-xl flex items-center justify-center">
+            <i class="fas fa-landmark text-[#f59e0b] text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-white mb-3 text-xl" data-i18n="experience.dongyin">东银集团</h3>
+          <a href="http://www.dongyin.com/" target="_blank" class="text-[#38bdf8] hover:text-white font-semibold transition block">
+            <span data-i18n="experience.visit">访问官网</span> <span class="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- 项目展示 -->
   <section id="projects" class="py-24 bg-[#0d1117]">
     <div class="max-w-6xl mx-auto px-4">
@@ -293,6 +357,9 @@
             <span class="skill-badge text-gray-300 px-4 py-2 rounded-lg text-sm">Android</span>
             <span class="skill-badge text-gray-300 px-4 py-2 rounded-lg text-sm">iOS</span>
             <span class="skill-badge text-gray-300 px-4 py-2 rounded-lg text-sm">Flutter</span>
+            <span class="skill-badge text-gray-300 px-4 py-2 rounded-lg text-sm">微信小程序</span>
+            <span class="skill-badge text-gray-300 px-4 py-2 rounded-lg text-sm">Taro</span>
+            <span class="skill-badge text-gray-300 px-4 py-2 rounded-lg text-sm">Uniapp</span>
           </div>
         </div>
 
@@ -339,7 +406,11 @@
           <div class="flex flex-wrap gap-2">
             <span class="skill-badge text-gray-300 px-4 py-2 rounded-lg text-sm">AWS</span>
             <span class="skill-badge text-gray-300 px-4 py-2 rounded-lg text-sm">Azure</span>
+            <span class="skill-badge text-gray-300 px-4 py-2 rounded-lg text-sm">OracleCloud</span>
             <span class="skill-badge text-gray-300 px-4 py-2 rounded-lg text-sm">GCP</span>
+            <span class="skill-badge text-gray-300 px-4 py-2 rounded-lg text-sm">阿里云</span>
+            <span class="skill-badge text-gray-300 px-4 py-2 rounded-lg text-sm">腾讯云</span>
+            <span class="skill-badge text-gray-300 px-4 py-2 rounded-lg text-sm">华为云</span>
           </div>
         </div>
       </div>
@@ -352,13 +423,14 @@
       <h2 class="text-4xl font-bold text-center mb-4 text-white" data-i18n="contact.title">联系方式</h2>
       <p class="text-gray-500 text-center mb-16 text-lg">Get in Touch</p>
       <div class="grid md:grid-cols-3 gap-6">
-        <a href="mailto:androidchenqinfeng@gmail.com" class="glass-card rounded-2xl p-8 card-hover">
+        <div class="glass-card rounded-2xl p-8 card-hover cursor-pointer" onclick="copyEmail()">
           <div class="w-16 h-16 mx-auto mb-6 bg-[#38bdf8]/10 rounded-xl flex items-center justify-center">
             <i class="fas fa-envelope text-[#38bdf8] text-2xl"></i>
           </div>
           <h3 class="font-bold text-white mb-3 text-lg" data-i18n="contact.email">邮箱</h3>
-          <p class="text-gray-400 text-sm">androidchenqinfeng@gmail.com</p>
-        </a>
+          <p class="text-gray-400 text-sm hover:text-[#38bdf8] transition">androidchenqinfeng@gmail.com</p>
+          <p class="text-gray-500 text-xs mt-2 text-center" data-i18n="contact.hint">点击复制</p>
+        </div>
 
         <div class="glass-card rounded-2xl p-8 card-hover">
           <div class="w-16 h-16 mx-auto mb-6 bg-[#22c55e]/10 rounded-xl flex items-center justify-center">
@@ -368,12 +440,12 @@
           <p class="text-gray-400 text-sm">百晓生开源</p>
         </div>
 
-        <a href="https://www.baixiaosheng.de" target="_blank" class="glass-card rounded-2xl p-8 card-hover">
-          <div class="w-16 h-16 mx-auto mb-6 bg-[#f59e0b]/10 rounded-xl flex items-center justify-center">
-            <i class="fas fa-blog text-[#f59e0b] text-2xl"></i>
+        <a href="https://blog.baixiaosheng.de" target="_blank" class="glass-card rounded-2xl p-8 card-hover">
+          <div class="w-16 h-16 mx-auto mb-6 bg-[#ec4899]/10 rounded-xl flex items-center justify-center">
+            <i class="fas fa-blog text-[#ec4899] text-2xl"></i>
           </div>
-          <h3 class="font-bold text-white mb-3 text-lg" data-i18n="contact.blog">个人博客</h3>
-          <p class="text-gray-400 text-sm">www.baixiaosheng.de</p>
+          <h3 class="font-bold text-white mb-3 text-lg" data-i18n="contact.blog">博客</h3>
+          <p class="text-gray-400 text-sm">blog.baixiaosheng.de</p>
         </a>
       </div>
 
@@ -394,6 +466,12 @@
     </div>
   </footer>
 
+  <!-- Toast 提示 -->
+  <div id="toast" class="toast">
+    <i class="fas fa-check-circle mr-2"></i>
+    <span data-i18n="contact.copied">已复制</span>
+  </div>
+
   <script>
     // 语言包
     const i18n = {
@@ -401,6 +479,7 @@
         'nav.about': '关于',
         'nav.projects': '项目',
         'nav.skills': '技术栈',
+        'nav.experience': '经历',
         'nav.contact': '联系',
         'hero.name': '百晓生',
         'hero.title': '开源开发者',
@@ -424,14 +503,23 @@
         'contact.title': '联系方式',
         'contact.email': '邮箱',
         'contact.wechat': '微信公众号',
-        'contact.blog': '个人博客',
+        'contact.blog': '博客',
+        'contact.copy': '复制邮箱',
+        'contact.copied': '已复制',
+        'contact.hint': '点击复制',
         'contact.follow': '关注我的 GitHub',
+        'experience.title': '工作经历',
+        'experience.chinatelecom': '中国电信',
+        'experience.sim': 'System In Motion',
+        'experience.dongyin': '东银集团',
+        'experience.visit': '访问官网',
         'footer.slogan': '热衷开源，专注技术'
       },
       en: {
         'nav.about': 'About',
         'nav.projects': 'Projects',
         'nav.skills': 'Skills',
+        'nav.experience': 'Experience',
         'nav.contact': 'Contact',
         'hero.name': 'Baixiaosheng',
         'hero.title': 'Open Source Developer',
@@ -456,8 +544,15 @@
         'contact.email': 'Email',
         'contact.wechat': 'WeChat',
         'contact.blog': 'Blog',
+        'contact.copy': 'Copy Email',
+        'contact.copied': 'Copied',
+        'contact.hint': 'Click to Copy',
         'contact.follow': 'Follow on GitHub',
-        'footer.slogan': 'Open Source & Tech Focused'
+        'experience.title': 'Work Experience',
+        'experience.chinatelecom': 'China Telecom',
+        'experience.sim': 'System In Motion',
+        'experience.dongyin': 'Dongyin Group',
+        'experience.visit': 'Visit Website'
       }
     };
 
@@ -503,6 +598,51 @@
     function loadLanguage() {
       const savedLang = localStorage.getItem('language') || 'zh';
       setLanguage(savedLang);
+    }
+
+    // 复制邮箱到剪贴板
+    function copyEmail() {
+      const email = 'androidchenqinfeng@gmail.com';
+      
+      console.log('点击邮箱地址');
+      
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(() => {
+          showToast();
+          console.log('复制成功:', email);
+        }).catch(err => {
+          console.error('复制失败:', err);
+        });
+      } else {
+        // 备用方案
+        const textArea = document.createElement('textarea');
+        textArea.value = email;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-9999px';
+        document.body.appendChild(textArea);
+        textArea.select();
+        
+        try {
+          document.execCommand('copy');
+          showToast();
+          console.log('复制成功（备方案）:', email);
+        } catch (err) {
+          console.error('复制失败（备方案）:', err);
+        }
+        
+        document.body.removeChild(textArea);
+      }
+    }
+
+    // 显示 toast 提示
+    function showToast() {
+      const toast = document.getElementById('toast');
+      if (toast) {
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+        }, 2000);
+      }
     }
 
     // 平滑滚动 - 修复版
