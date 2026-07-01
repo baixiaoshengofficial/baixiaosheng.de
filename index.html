@@ -167,7 +167,7 @@
             <span class="text-green-400">$</span> <span class="accent-blue">cat</span> description.txt
           </div>
           <div class="text-gray-300 mb-6 pl-4 leading-relaxed">
-            <span data-i18n="hero.description">我做一些开源小工具，也折腾前端、后端、数据库和云服务。能解决实际问题，比堆概念更重要。</span>
+            <span data-i18n="hero.description">关注开源与工程实践，主要构建开发工具、系统服务和自动化脚本。方向包括前端、后端、数据库与云服务。</span>
           </div>
           <div class="text-gray-300 mb-4">
             <span class="text-green-400">$</span> <span class="accent-blue">ls</span> ./skills
@@ -207,13 +207,13 @@
       <div class="grid md:grid-cols-2 gap-16 items-center">
         <div>
           <p class="text-gray-300 text-lg leading-relaxed mb-6" data-i18n="about.p1">
-            我是百晓生。平时写代码、做工具，也把能公开的东西放到 GitHub 上。
+            我是百晓生，一名开源开发者。这个站点整理了我的项目、工具和一些技术实践。
           </p>
           <p class="text-gray-300 text-lg leading-relaxed mb-6" data-i18n="about.p2">
-            主要做全栈开发，前端、后端、数据库和云服务都碰过；从想法到部署，基本可以自己走完。
+            我主要做全栈开发，覆盖前端、后端、数据库与云服务，也负责项目从开发到部署的落地。
           </p>
           <p class="text-gray-300 text-lg leading-relaxed" data-i18n="about.p3">
-            如果你也在做开源项目，或者想聊技术，欢迎联系。
+            欢迎查看项目，也欢迎交流开源、工程实践和相关合作。
           </p>
         </div>
         <div class="grid grid-cols-2 gap-6">
@@ -293,7 +293,7 @@
           </div>
           <div class="p-8">
             <h3 class="text-xl font-bold mb-3 text-white">SubscribeManager</h3>
-            <p class="text-gray-400 mb-6 text-sm leading-relaxed" data-i18n="projects.subscribe.description">轻量的节点订阅管理器，页面简单，部署也不麻烦。</p>
+            <p class="text-gray-400 mb-6 text-sm leading-relaxed" data-i18n="projects.subscribe.description">轻量的节点订阅管理器，用于整理、管理和发布订阅配置。</p>
             <div class="flex flex-wrap gap-3">
               <a href="https://subscribe.baixiaosheng.de" target="_blank" rel="noopener noreferrer"
                  class="inline-flex items-center text-[#38bdf8] hover:text-white font-semibold transition">
@@ -314,7 +314,7 @@
           </div>
           <div class="p-8">
             <h3 class="text-xl font-bold mb-3 text-white">ProxyCli</h3>
-            <p class="text-gray-400 mb-6 text-sm leading-relaxed" data-i18n="projects.proxy.description">给 Bash 和 Zsh 用的代理管理脚本，适合日常快速切换代理。</p>
+            <p class="text-gray-400 mb-6 text-sm leading-relaxed" data-i18n="projects.proxy.description">面向 Bash 和 Zsh 的代理管理脚本，用于在终端中快速切换代理配置。</p>
             <div class="flex flex-wrap gap-3">
               <a href="https://proxycli.baixiaosheng.de" target="_blank" rel="noopener noreferrer"
                  class="inline-flex items-center text-[#38bdf8] hover:text-white font-semibold transition">
@@ -335,7 +335,7 @@
           </div>
           <div class="p-8">
             <h3 class="text-xl font-bold mb-3 text-white">sysinfo-cli</h3>
-            <p class="text-gray-400 mb-6 text-sm leading-relaxed" data-i18n="projects.sysinfo.description">面向 Debian/Ubuntu 的轻量系统监控工具，看状态时不用开一堆面板。</p>
+            <p class="text-gray-400 mb-6 text-sm leading-relaxed" data-i18n="projects.sysinfo.description">面向 Debian/Ubuntu 的轻量系统监控工具，用于查看服务器运行状态。</p>
             <div class="flex flex-wrap gap-3">
               <a href="https://sysinfo.baixiaosheng.de" target="_blank" rel="noopener noreferrer"
                  class="inline-flex items-center text-[#38bdf8] hover:text-white font-semibold transition">
@@ -476,8 +476,8 @@
   <!-- Footer -->
   <footer class="bg-[#161b22] border-t border-[#30363d] text-white py-12">
     <div class="max-w-6xl mx-auto px-4 text-center">
-      <p class="text-gray-400 text-lg mb-2">© 2024 百晓生. All rights reserved.</p>
-      <p class="text-gray-500" data-i18n="footer.slogan">写代码，做工具，保持开源</p>
+      <p class="text-gray-400 text-lg mb-2">© <span id="copyright-year"></span> 百晓生. All rights reserved.</p>
+      <p class="text-gray-500" data-i18n="footer.slogan">开源工具与工程实践</p>
     </div>
   </footer>
 
@@ -498,20 +498,20 @@
         'nav.contact': '联系',
         'hero.name': '百晓生',
         'hero.title': '开源开发者',
-        'hero.description': '我做一些开源小工具，也折腾前端、后端、数据库和云服务。能解决实际问题，比堆概念更重要。',
+        'hero.description': '关注开源与工程实践，主要构建开发工具、系统服务和自动化脚本。方向包括前端、后端、数据库与云服务。',
         'hero.viewProjects': '查看项目',
         'about.title': '关于我',
-        'about.p1': '我是百晓生。平时写代码、做工具，也把能公开的东西放到 GitHub 上。',
-        'about.p2': '主要做全栈开发，前端、后端、数据库和云服务都碰过；从想法到部署，基本可以自己走完。',
-        'about.p3': '如果你也在做开源项目，或者想聊技术，欢迎联系。',
+        'about.p1': '我是百晓生，一名开源开发者。这个站点整理了我的项目、工具和一些技术实践。',
+        'about.p2': '我主要做全栈开发，覆盖前端、后端、数据库与云服务，也负责项目从开发到部署的落地。',
+        'about.p3': '欢迎查看项目，也欢迎交流开源、工程实践和相关合作。',
         'stats.projects': '开源项目',
         'stats.skills': '技术栈',
         'stats.clouds': '云平台',
         'stats.opensource': '开源',
         'projects.title': '开源项目',
-        'projects.subscribe.description': '轻量的节点订阅管理器，页面简单，部署也不麻烦。',
-        'projects.proxy.description': '给 Bash 和 Zsh 用的代理管理脚本，适合日常快速切换代理。',
-        'projects.sysinfo.description': '面向 Debian/Ubuntu 的轻量系统监控工具，看状态时不用开一堆面板。',
+        'projects.subscribe.description': '轻量的节点订阅管理器，用于整理、管理和发布订阅配置。',
+        'projects.proxy.description': '面向 Bash 和 Zsh 的代理管理脚本，用于在终端中快速切换代理配置。',
+        'projects.sysinfo.description': '面向 Debian/Ubuntu 的轻量系统监控工具，用于查看服务器运行状态。',
         'projects.homepage': '项目主页',
         'projects.github': 'GitHub',
         'projects.view': '查看项目',
@@ -533,7 +533,7 @@
         'experience.sim': 'System In Motion',
         'experience.dongyin': '东银集团',
         'experience.visit': '访问官网',
-        'footer.slogan': '写代码，做工具，保持开源'
+        'footer.slogan': '开源工具与工程实践'
       },
       en: {
         'nav.about': 'About',
@@ -543,20 +543,20 @@
         'nav.contact': 'Contact',
         'hero.name': 'Baixiaosheng',
         'hero.title': 'Open Source Developer',
-        'hero.description': 'I build small open source tools and work across frontend, backend, databases, and cloud services. Useful beats fancy.',
+        'hero.description': 'I work on open source tools, system services, and automation scripts across frontend, backend, databases, and cloud services.',
         'hero.viewProjects': 'View Projects',
         'about.title': 'About Me',
-        'about.p1': 'I am Baixiaosheng. I write code, build tools, and put the things I can share on GitHub.',
-        'about.p2': 'Most of my work is full stack: frontend, backend, databases, and cloud services. I can usually take an idea from prototype to deployment.',
-        'about.p3': 'If you are working on open source or want to talk tech, feel free to reach out.',
+        'about.p1': 'I am Baixiaosheng, an open source developer. This site collects my projects, tools, and engineering notes.',
+        'about.p2': 'My work is mostly full stack, covering frontend, backend, databases, and cloud services. I also handle deployment for my projects.',
+        'about.p3': 'Feel free to explore the projects or reach out about open source, engineering work, or collaboration.',
         'stats.projects': 'Open Source Projects',
         'stats.skills': 'Tech Stack',
         'stats.clouds': 'Cloud Platforms',
         'stats.opensource': 'Open Source',
         'projects.title': 'Open Source Projects',
-        'projects.subscribe.description': 'A lightweight subscription manager for nodes, with a simple page and straightforward deployment.',
-        'projects.proxy.description': 'A lightweight proxy manager for Bash and Zsh, built for quick day-to-day switching.',
-        'projects.sysinfo.description': 'A lightweight system monitor for Debian/Ubuntu servers, useful when you just need the current state.',
+        'projects.subscribe.description': 'A lightweight node subscription manager for organizing, managing, and publishing subscription configs.',
+        'projects.proxy.description': 'A proxy management script for Bash and Zsh, used to switch terminal proxy settings quickly.',
+        'projects.sysinfo.description': 'A lightweight system monitor for Debian/Ubuntu servers, used to check runtime status from the terminal.',
         'projects.homepage': 'Homepage',
         'projects.github': 'GitHub',
         'projects.view': 'View Project',
@@ -578,7 +578,7 @@
         'experience.sim': 'System In Motion',
         'experience.dongyin': 'Dongyin Group',
         'experience.visit': 'Visit Website',
-        'footer.slogan': 'Build tools. Ship code. Keep it open.'
+        'footer.slogan': 'Open source tools and engineering practice.'
       }
     };
 
@@ -624,6 +624,14 @@
     function loadLanguage() {
       const savedLang = localStorage.getItem('language') || 'zh';
       setLanguage(savedLang);
+    }
+
+    // 更新版权年份
+    function updateCopyrightYear() {
+      const yearElement = document.getElementById('copyright-year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
     }
 
     // 复制邮箱到剪贴板
@@ -675,6 +683,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       // 加载语言设置
       loadLanguage();
+      updateCopyrightYear();
       
       const headerOffset = 80;
 
